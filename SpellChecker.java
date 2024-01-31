@@ -21,7 +21,7 @@ public class SpellChecker {
 			return (Math.max(word1.length(), word2.length())); 
 		}
 
-		if (word1.charAt(1) == (word2.charAt(1))){
+		if (word1.charAt(0) == (word2.charAt(0))){
 			levenshtein(tail(word1),tail(word2)); 
 		}
 		if (levenshtein(tail(word1),word2) > levenshtein(word1,tail(word2))){
